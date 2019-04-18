@@ -33,6 +33,10 @@ section {
 	width: 100%;
 }
 
+.form-container-inputs-password {
+	margin-left: auto;
+}
+
 .register-btn {
 	margin-left: auto;
 }

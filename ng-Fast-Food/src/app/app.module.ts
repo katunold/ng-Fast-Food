@@ -5,11 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
 import { MaterialModule } from './modules/shared/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
-// @ts-ignore
 @NgModule({
 	declarations: [AppComponent, UserRegisterComponent],
-	imports: [BrowserModule, MaterialModule, AppRoutingModule],
+	imports: [
+		BrowserModule,
+		MaterialModule,
+		AppRoutingModule,
+		ReactiveFormsModule
+	],
 	providers: [],
 	bootstrap: [AppComponent],
 })
