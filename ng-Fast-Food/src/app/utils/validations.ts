@@ -5,7 +5,8 @@ export class Validations {
 	public textInputErrorMessages = {
 		required: 'This field is required',
 		minlength: 'This field should have at-least 4 characters',
-		email: 'Invalid email format'
+		email: 'Invalid email format',
+		invalidContact: 'Invalid contact format, please enter a value with this format +25670000000'
 	};
 
 	public passwordInputErrorMessages = {
@@ -14,17 +15,14 @@ export class Validations {
 		match: 'Passwords are not matching'
 	};
 
-	public passwordMatch = (c: AbstractControl)
-		: { [key: string]: boolean } | null => {
-		const passwordControl = c.get('password');
-		const confirmPasswordControl = c.get('confirmPassword');
-		if (passwordControl.pristine || confirmPasswordControl.pristine) {
-			return null;
-		}
-		if (passwordControl.value === confirmPasswordControl.value) {
-			return null;
-		}
-		return {match: true};
+	public validateContact = (c: AbstractControl):
+		{ [key: string]: boolean } | null => {
+		const contactValue = c.value;
+		return (contactValue !== '') &&
+		contactValue.match(new RegExp(/^[0-9]{10,13}$/))
+			? null
+			: { invalidContact: true };
 	}
+
 
 }
