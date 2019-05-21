@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@font-face {
+	font-family: SuperMarioBros;
+	src: url(assets/font/SuperMarioBros.ttf) format("opentype");
+}
+
+:root {
+	--dark1: #333333;
+	--dark2: #4f4f4f;
+	--dark3: #828282;
+	--gray1: #bdbdbd;
+	--gray2: #e0e0e0;
+	--gray3: #f2f2f2;
+	--white: #fff;
+	--red: #eb5757;
+	--primary-color: #007a89;
+	--faint-primary-color: #0079891e;
+	--accent-color: #eb5757;
+	--accent-color-error: #ff4444;
+	--accent-color-success: #00C851;
+	--accent-color-warning: #ffbb33;
+	--accent-color-info: #33b5e5;
+	--cream: #f0efe3;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+section {
+	width: 100%;
+	height: 100vh;
+}
+.left-panel {
+	width: 100%;
+	height: 100%;
+	background: url('/assets/images/sheldon-nunes.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 30% 0px;
+}
+
+.right-panel {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/*background: #ffffff;*/
+	background: rgba(240, 255, 255, 0.41);
+}
+
+.cover {
+	width: 100%;
+	height: 100%;
+	background: rgba(37, 37, 37, 0.8);
+}
+
+.form-container {
+	width: 70%;
+}
+
+.form-container-inputs {
+	width: 100%;
+}
+
+.form-container-inputs-password {
+	margin-left: auto;
+}
+
+.register-btn {
+	margin-left: auto;
+}
+
