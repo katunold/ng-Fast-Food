@@ -1,6 +1,6 @@
 const appConfig = () => {
 	return {
-		base_url: 'http://0.0.0.0:5000',
+		base_url: 'https://fast-food-andela-way.herokuapp.com',
 	};
 };
 
