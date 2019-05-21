@@ -34,15 +34,16 @@ import {
 	MatButtonModule,
 	MatChipsModule,
 } from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { SpinnerComponent } from './spinner/spinner/spinner.component';
 
 // @ts-ignore
 @NgModule({
 	imports: [
 		MatDialogModule,
-		BrowserAnimationsModule,
+		// BrowserAnimationsModule,
 		MatFormFieldModule,
 		MatInputModule,
 		MatGridListModule,
@@ -89,7 +90,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 	],
 	exports: [
 		MatDialogModule,
-		BrowserAnimationsModule,
+		// BrowserAnimationsModule,
 		MatFormFieldModule,
 		MatInputModule,
 		MatGridListModule,
@@ -135,5 +136,6 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 		MatListModule,
 		ScrollingModule,
 	],
+	declarations: [SpinnerComponent],
 })
 export class MaterialModule {}

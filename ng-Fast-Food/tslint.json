@@ -82,6 +82,12 @@
 		"directive-class-suffix": true,
 		"one-variable-per-declaration": true,
 		"one-line": [true, "check-catch", "check-finally", "check-else", "check-open-brace"],
-		"variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"]
+		"variable-name": [
+			true,
+			"ban-keywords",
+			"check-format",
+			"allow-leading-underscore",
+			"allow-snake-case"
+		]
 	}
 }

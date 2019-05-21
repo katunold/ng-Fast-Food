@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@font-face {
+	font-family: SuperMarioBros;
+	src: url(assets/font/SuperMarioBros.ttf) format("opentype");
+}
 
 :root {
 	--dark1: #333333;
@@ -11,7 +15,12 @@
 	--white: #fff;
 	--red: #eb5757;
 	--primary-color: #007a89;
+	--faint-primary-color: #0079891e;
 	--accent-color: #eb5757;
+	--accent-color-error: #ff4444;
+	--accent-color-success: #00C851;
+	--accent-color-warning: #ffbb33;
+	--accent-color-info: #33b5e5;
 	--cream: #f0efe3;
 }
 

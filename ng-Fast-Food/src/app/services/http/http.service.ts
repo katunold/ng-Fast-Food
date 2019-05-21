@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { configurations } from '../../utils/config';
 
 @Injectable({
 	providedIn: 'root'
 })
 export class HttpService {
-	url = 'http://0.0.0.0:5000';
+	url = configurations.base_url;
 
 	constructor(
 		private http: HttpClient
@@ -15,7 +16,4 @@ export class HttpService {
 		return this.http.post(`${this.url}/api/v1/auth/signup/`, user);
 	}
 
-	loginUser = (user: any) => {
-		return this.http.post(`${this.url}/api/v1/auth/login/`, user);
-	}
 }

@@ -1,11 +1,13 @@
 <section fxLayout="row" fxLayout.xs="column">
 	<div class="left-panel" fxHide="true" fxShow.gt-sm>
-		<div class="cover"></div>
+		<div class="cover">
+			<img class="logo" src="assets/images/cut2.png" alt="logo">
+		</div>
 	</div>
 	<div class="right-panel" fxLayoutAlign="center center">
 		<mat-card class="form-container">
 			<mat-card-header>
-				<mat-card-title><h3>Sign up</h3></mat-card-title>
+				<mat-card-title><h3>{{form_title}}</h3></mat-card-title>
 				<mat-card-subtitle><h5>Register with us today</h5></mat-card-subtitle>
 			</mat-card-header>
 			<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">

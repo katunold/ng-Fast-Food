@@ -3,6 +3,8 @@ import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/fo
 import { debounceTime, first } from 'rxjs/operators';
 import { Validations } from '../../utils/validations';
 import { HttpService } from '../../services/http/http.service';
+import { SnackBarService } from '../../services/snack-bar/snack-bar.service';
+import { Router } from '@angular/router';
 
 @Component({
 	selector: 'app-user-register',
@@ -15,21 +17,31 @@ export class UserRegisterComponent implements OnInit {
 	emailErrorMessage: string;
 	contactErrorMessage: string;
 	passwordErrorMessage: string;
+	user_type: string;
+	form_title: string;
 	validations = new Validations();
 
 	hide = true;
 
 	constructor(
 		private fb: FormBuilder,
-		private http: HttpService
+		private http: HttpService,
+		private snackBar: SnackBarService,
+		private router: Router
 	) {}
 
 	ngOnInit() {
+		this.user_type = this.router.url.includes('/register/admin')
+			? 'admin'
+			: 'client';
+		this.form_title = this.user_type.includes('admin')
+			? 'Admin Sign Up'
+			: 'Sign Up';
 		this.registrationForm = this.fb.group({
 			user_name: ['', [Validators.required, Validators.minLength(4)]],
 			email: ['', [Validators.required, Validators.email]],
 			contact: ['', [Validators.required, this.validations.validateContact]],
-			user_type: 'client',
+			user_type: this.user_type,
 			password: ['', [Validators.required, Validators.minLength(6)]]
 		});
 
@@ -112,8 +124,17 @@ export class UserRegisterComponent implements OnInit {
 		this.http.registerUser(registrationData)
 			.pipe(first())
 			.subscribe(
-				data => console.log(data),
-				error => console.log(error)
+				data => {
+					this.router.navigate(['login']);
+					this.snackBar.displaySnackBar(
+						'Successfully registered',
+						'success-snackbar'
+					);
+				},
+				error => this.snackBar.displaySnackBar(
+					error.error.message,
+					'error-snackbar'
+				)
 			);
 	}
 }

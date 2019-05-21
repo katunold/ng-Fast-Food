@@ -8,11 +8,13 @@ import { MaterialModule } from './modules/shared/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserLoginComponent } from './components/user-login/user-login.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
 	declarations: [AppComponent, UserRegisterComponent, UserLoginComponent],
 	imports: [
 		BrowserModule,
+		BrowserAnimationsModule,
 		MaterialModule,
 		AppRoutingModule,
 		ReactiveFormsModule,

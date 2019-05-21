@@ -1,0 +1,43 @@
+.mat-icon {
+	cursor: default;
+}
+
+.success-snackbar {
+	background: var(--accent-color-success);
+	color: #fff;
+}
+
+.success-snackbar .mat-simple-snackbar-action{
+	color: #fff;
+	font-weight: 300;
+}
+
+.error-snackbar {
+	background: var(--accent-color-error);
+	color: #fff;
+}
+
+.error-snackbar .mat-simple-snackbar-action{
+	color: #fff;
+	font-weight: 300;
+}
+
+.warning-snackbar{
+	background: var(--accent-color-warning);
+	color: #fff;
+}
+
+.warning-snackbar .mat-simple-snackbar-action{
+	color: #fff;
+	font-weight: 300;
+}
+
+.info-snackbar{
+	background: var(--accent-color-info);
+	color: #fff;
+}
+
+.info-snackbar .mat-simple-snackbar-action{
+	color: #fff;
+	font-weight: 300;
+}
