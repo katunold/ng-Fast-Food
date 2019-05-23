@@ -1,0 +1,21 @@
+<button style="float: right" mat-icon-button (click)="onNoClick()">
+	<mat-icon aria-label="Example icon-button with a heart icon">cancel</mat-icon>
+</button>
+<form class="place-order" [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+	<h1 mat-dialog-title>Place Order Here</h1><hr>
+	<mat-form-field appearance="outline" style="width: 100%">
+		<mat-label>Select an option</mat-label>
+		<mat-select formControlName="order_item" [(value)]="selected">
+			<mat-option>None</mat-option>
+			<mat-option *ngFor="let item of data" [value]="item.item_name">{{item.item_name}}</mat-option>
+		</mat-select>
+	</mat-form-field>
+
+	<mat-form-field appearance="outline" style="width: 100%">
+		<textarea formControlName="special_notes" matInput placeholder="Order notes"></textarea>
+	</mat-form-field>
+	<div align="end" mat-dialog-actions>
+		<button type="submit" mat-button cdkFocusInitial>Submit Order</button>
+	</div>
+</form>
+

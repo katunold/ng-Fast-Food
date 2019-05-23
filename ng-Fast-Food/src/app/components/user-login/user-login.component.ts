@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 })
 export class UserLoginComponent implements OnInit {
 	loginForm: FormGroup;
+	loading: boolean;
 
 	constructor(
 		private fb: FormBuilder,
@@ -25,9 +26,11 @@ export class UserLoginComponent implements OnInit {
 			user_name: ['', Validators.required],
 			password: ['', Validators.required]
 		});
+		this.loading = false;
 	}
 
 	onLogin = () => {
+		this.loading = true;
 		const login = this.loginForm;
 		const loginData = {
 			user_name: login.get('user_name').value,
@@ -35,9 +38,15 @@ export class UserLoginComponent implements OnInit {
 		};
 		sessionStorage.setItem('account_name', loginData.user_name);
 		this.http.loginUser(loginData).pipe(first()).subscribe(
-			() => this.router.navigate(['/menu']),
-			error => this.snackBar.displaySnackBar(
-				error.error.message, 'error-snackbar')
+			() => {
+				this.router.navigate(['/menu']);
+				this.loading = false;
+			},
+			error => {
+				this.snackBar.displaySnackBar(
+				error.error.message, 'error-snackbar');
+				this.loading = false;
+			}
 		);
 	}
 
