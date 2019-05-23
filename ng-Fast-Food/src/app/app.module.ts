@@ -7,8 +7,9 @@ import { UserRegisterComponent } from './components/user-register/user-register.
 import { MaterialModule } from './modules/shared/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserLoginComponent } from './components/user-login/user-login.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { JwtInterceptorService } from './services/interceptors/jwt/jwt.interceptor.service';
 
 @NgModule({
 	declarations: [AppComponent, UserRegisterComponent, UserLoginComponent],
@@ -20,7 +21,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 		ReactiveFormsModule,
 		HttpClientModule
 	],
-	providers: [],
+	providers: [
+		{
+			provide: HTTP_INTERCEPTORS,
+			useClass: JwtInterceptorService,
+			multi: true,
+		}
+	],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}

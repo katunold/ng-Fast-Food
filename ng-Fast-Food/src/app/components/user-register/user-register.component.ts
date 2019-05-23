@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 	styleUrls: ['./user-register.component.css'],
 })
 export class UserRegisterComponent implements OnInit {
+	loading: boolean;
 	registrationForm: FormGroup;
 	usernameErrorMessage: string;
 	emailErrorMessage: string;
@@ -72,6 +73,8 @@ export class UserRegisterComponent implements OnInit {
 		).subscribe(
 			() => this.setPasswordErrorMessage(passwordControl)
 		);
+
+		this.loading = false;
 	}
 
 	public setUserNameErrorMessage(c: AbstractControl): void {
@@ -113,6 +116,7 @@ export class UserRegisterComponent implements OnInit {
 	}
 
 	onSubmit = () => {
+		this.loading = true;
 		const registration = this.registrationForm;
 		const registrationData = {
 			user_name: registration.get('user_name').value,
@@ -121,7 +125,7 @@ export class UserRegisterComponent implements OnInit {
 			user_type: registration.get('user_type').value,
 			password: registration.get('password').value,
 		};
-		this.http.registerUser(registrationData)
+		this.http.postData('/auth/signup/', registrationData)
 			.pipe(first())
 			.subscribe(
 				data => {
@@ -130,11 +134,14 @@ export class UserRegisterComponent implements OnInit {
 						'Successfully registered',
 						'success-snackbar'
 					);
+					this.loading = false;
 				},
-				error => this.snackBar.displaySnackBar(
+				error => {
+					this.snackBar.displaySnackBar(
 					error.error.message,
-					'error-snackbar'
-				)
+					'error-snackbar');
+					this.loading = false;
+				}
 			);
 	}
 }

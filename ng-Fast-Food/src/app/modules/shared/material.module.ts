@@ -135,6 +135,7 @@ import { SpinnerComponent } from './spinner/spinner/spinner.component';
 		MatRadioModule,
 		MatListModule,
 		ScrollingModule,
+		SpinnerComponent,
 	],
 	declarations: [SpinnerComponent],
 })

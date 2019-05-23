@@ -39,7 +39,7 @@ section {
 	background: url('/assets/images/sheldon-nunes.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 30% 0px;
+	background-position: 30% 0;
 }
 
 .right-panel {
@@ -70,5 +70,15 @@ section {
 
 .register-btn {
 	margin-left: auto;
+}
+
+.spinner {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6);
+	width: 100vw;
+	height: 100vh;
+	z-index: 90;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
