@@ -13,7 +13,7 @@ import { PlaceOrderComponent } from '../place-order/place-order.component';
 export class MenuComponent implements OnInit, OnDestroy {
 	dataSource = new MatTableDataSource();
 	private unsubscribe$: Subject<any> = new Subject<any>();
-	loading: boolean;
+	loading = true;
 	menu_items: any;
 	displayedColumns: string[] = ['avatar', 'item_name', 'price', 'item_status'];
 

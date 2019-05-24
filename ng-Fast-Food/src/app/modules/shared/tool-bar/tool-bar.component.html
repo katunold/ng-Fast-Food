@@ -1,0 +1,13 @@
+<mat-toolbar class="page-header" fxLayout="row wrap" fxLayoutAlign="start" fxLayout.lt-sm="column">
+	<mat-toolbar-row fxLayout="row wrap" fxLayoutAlign="start" fxLayout.lt-sm="column" class="top-row">
+		<span fxFlex class="mat-title-met">{{tool_bar_title}}</span>
+
+		<button fxShow fxHide.lt-sm *ngIf="button_name" mat-raised-button (click)="openDialog($event)" class="place-order">
+			<mat-icon>add</mat-icon>
+			{{button_name}}
+		</button>
+		<button fxHide fxShow.lt-sm *ngIf="button_name" mat-mini-fab (click)="openDialog($event)" class="place-order-sm">
+			<mat-icon>add</mat-icon>
+		</button>
+	</mat-toolbar-row>
+</mat-toolbar>

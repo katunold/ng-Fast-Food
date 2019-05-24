@@ -1,0 +1,46 @@
+<app-spinner *ngIf="loading"></app-spinner>
+<app-tool-bar tool_bar_title="Fast Food Fast Orders"></app-tool-bar>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+	<ng-container matColumnDef="order_id">
+		<th mat-header-cell *matHeaderCellDef>Order Number</th>
+		<td (click)="singleOrder(element.order_id)" mat-cell *matCellDef="let element">
+			{{element.order_id}}
+		</td>
+	</ng-container>
+	<ng-container matColumnDef="order_item">
+		<th fxShow fxHide.lt-sm mat-header-cell *matHeaderCellDef>Order</th>
+		<td (click)="singleOrder(element.order_id)" fxShow fxHide.lt-sm mat-cell *matCellDef="let element">
+			{{element.order_item}}
+		</td>
+	</ng-container>
+	<ng-container matColumnDef="client">
+		<th mat-header-cell *matHeaderCellDef>Client</th>
+		<td (click)="singleOrder(element.order_id)" mat-cell *matCellDef="let element">{{element.client}}</td>
+	</ng-container>
+	<ng-container matColumnDef="client_contact">
+		<th fxShow fxHide.lt-sm mat-header-cell *matHeaderCellDef>Client Contact</th>
+		<td (click)="singleOrder(element.order_id)" fxShow fxHide.lt-sm mat-cell *matCellDef="let element">{{element.client_contact}}</td>
+	</ng-container>
+	<ng-container matColumnDef="order_date">
+		<th fxShow fxHide.lt-sm mat-header-cell *matHeaderCellDef>Order Date</th>
+		<td (click)="singleOrder(element.order_id)" fxShow fxHide.lt-sm mat-cell *matCellDef="let element">{{element.order_date}}</td>
+	</ng-container>
+	<ng-container matColumnDef="order_status">
+		<th mat-header-cell *matHeaderCellDef>Order Status</th>
+		<td mat-cell *matCellDef="let element">
+			<mat-form-field>
+				<mat-select (selectionChange)="selected({data:$event, id: element.order_id})" [(value)]="element.order_status">
+					<mat-option  [value]="element.order_status">{{element.order_status}}</mat-option>
+					<mat-option *ngIf="'New'!== element.order_status" value="New">New</mat-option>
+					<mat-option *ngIf="'Processing'!== element.order_status" value="Processing">Processing</mat-option>
+					<mat-option *ngIf="'Completed'!== element.order_status" value="Completed">Completed</mat-option>
+					<mat-option *ngIf="'Cancelled'!== element.order_status" value="Cancelled">Cancelled</mat-option>
+				</mat-select>
+			</mat-form-field>
+		</td>
+	</ng-container>
+
+	<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+	<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+

@@ -5,6 +5,7 @@ import { Validations } from '../../utils/validations';
 import { HttpService } from '../../services/http/http.service';
 import { SnackBarService } from '../../services/snack-bar/snack-bar.service';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 @Component({
 	selector: 'app-user-register',
@@ -28,10 +29,14 @@ export class UserRegisterComponent implements OnInit {
 		private fb: FormBuilder,
 		private http: HttpService,
 		private snackBar: SnackBarService,
-		private router: Router
+		private router: Router,
+		private httpAuth: AuthService
 	) {}
 
 	ngOnInit() {
+		if (this.httpAuth.currentUserValue) {
+			this.router.navigate(['menu']);
+		}
 		this.user_type = this.router.url.includes('/register/admin')
 			? 'admin'
 			: 'client';
