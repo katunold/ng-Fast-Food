@@ -1,0 +1,23 @@
+.page-header {
+	padding-right: 2rem;
+	padding-top: 5rem;
+}
+
+.mat-title-met {
+	font: 400 29px/32px Roboto, 'Helvetica Neue', sans-serif;
+	padding-left: 1%;
+}
+
+table {
+	width: 95%;
+	margin: auto;
+}
+
+.mat-row:hover {
+	background-color: #828282;
+}
+
+.mat-cell:hover {
+	color: white;
+}
+

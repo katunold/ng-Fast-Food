@@ -19,6 +19,10 @@ export class HttpService {
 		return this.http.post<any>(this.url + endpoint, data);
 	}
 
+	updateData = (endpoint: string, data: any) => {
+		return this.http.put<any>(this.url + endpoint, data);
+	}
+
 	getData = (endpoint: string) => {
 		return this.http.get<any>(this.url + endpoint);
 	}

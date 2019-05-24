@@ -22,6 +22,9 @@ export class UserLoginComponent implements OnInit {
 	) { }
 
 	ngOnInit() {
+		if (this.http.currentUserValue) {
+			this.router.navigate(['menu']);
+		}
 		this.loginForm = this.fb.group({
 			user_name: ['', Validators.required],
 			password: ['', Validators.required]

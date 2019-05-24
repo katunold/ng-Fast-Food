@@ -14,7 +14,6 @@ import { SnackBarService } from 'src/app/services/snack-bar/snack-bar.service';
 export class PlaceOrderComponent implements OnInit, OnDestroy{
 	private unsubscribe$: Subject<any> = new Subject<any>();
 	orderForm: FormGroup;
-	selected = 'option1';
 	constructor(
 		public dialogRef: MatDialogRef<PlaceOrderComponent>,
 		@Inject(MAT_DIALOG_DATA) public data,
@@ -36,6 +35,7 @@ export class PlaceOrderComponent implements OnInit, OnDestroy{
 
 	onSubmit = () => {
 		const order_data = this.orderForm.value;
+		this.onNoClick();
 		this.httpService.postData('/orders', order_data)
 			.pipe(takeUntil(this.unsubscribe$))
 			.subscribe(
@@ -44,13 +44,11 @@ export class PlaceOrderComponent implements OnInit, OnDestroy{
 					this.snackBarService.displaySnackBar(
 						message,
 						'success-snackbar');
-					this.onNoClick();
 				},
 				error => {
 					this.snackBarService.displaySnackBar(
 						error.message,
 						'error-snackbar');
-					this.onNoClick();
 				}
 			);
 	}

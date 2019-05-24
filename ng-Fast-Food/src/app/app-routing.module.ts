@@ -10,7 +10,7 @@ const routes: Routes = [
 	{ path: 'register/admin', component: UserRegisterComponent },
 	{ path: 'login', component: UserLoginComponent},
 	{
-		path: 'menu',
+		path: '',
 		loadChildren: './modules/feature/feature.module#FeatureModule',
 		canActivate: [AuthGuard]
 	},
