@@ -8,10 +8,11 @@ import { FeatureComponent } from './feature.component';
 import { MaterialModule } from '../shared/material.module';
 import { PlaceOrderComponent } from './place-order/place-order.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { ErrorInterceptorService } from 'src/app/services/interceptors/error/error-interceptor.service';
 import { OrdersComponent } from './orders/orders.component';
 import { SingleOrderComponent } from './single-order/single-order.component';
+import { OrderHistoryComponent } from './order-history/order-history.component';
+import { AddMenuItemComponent } from './add-menu-item/add-menu-item.component';
+import { DeleteMenuItemComponent } from './delete-menu-item/delete-menu-item.component';
 
 @NgModule({
 	declarations: [
@@ -20,7 +21,10 @@ import { SingleOrderComponent } from './single-order/single-order.component';
 		FeatureComponent,
 		PlaceOrderComponent,
 		OrdersComponent,
-		SingleOrderComponent],
+		SingleOrderComponent,
+		OrderHistoryComponent,
+		AddMenuItemComponent,
+		DeleteMenuItemComponent],
 	imports: [
 		CommonModule,
 		FeatureRoutingModule,
@@ -29,14 +33,9 @@ import { SingleOrderComponent } from './single-order/single-order.component';
 	],
 	entryComponents: [
 		PlaceOrderComponent,
-		SingleOrderComponent
-	],
-	providers: [
-		{
-			provide: HTTP_INTERCEPTORS,
-			useClass: ErrorInterceptorService,
-			multi: true,
-		}
-	],
+		SingleOrderComponent,
+		AddMenuItemComponent,
+		DeleteMenuItemComponent
+	]
 })
 export class FeatureModule { }

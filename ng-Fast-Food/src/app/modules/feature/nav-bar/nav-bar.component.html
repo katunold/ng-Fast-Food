@@ -11,7 +11,7 @@
 			<div fxHide fxShow.gt-md >
 				<a mat-button class="menu-class" routerLink="/menu">Place Order</a>
 				<a mat-button class="menu" *ngIf="display" routerLink="/orders">Orders Placed</a>
-				<a mat-button class="menu" *ngIf="display" routerLink="/items">Menu Items</a>
+				<a mat-button class="menu" routerLink="/order-history">Order History</a>
 				<a mat-button class="menu" routerLink="/profile">User Profile</a>
 				<span class="spacer"></span>
 				<a mat-button class="menu-logout" (click)="onLogout()">{{userName}} | Logout</a>
