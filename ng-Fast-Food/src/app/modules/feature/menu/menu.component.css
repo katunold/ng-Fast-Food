@@ -1,0 +1,12 @@
+table {
+	width: 95%;
+	margin: auto;
+}
+
+.mat-row:hover {
+	background-color: #828282;
+}
+
+.mat-cell:hover {
+	color: white;
+}
