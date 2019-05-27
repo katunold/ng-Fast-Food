@@ -12,9 +12,20 @@
 	margin-left: auto;
 	background-color: var(--accent-color-info);
 	border-radius: 2.4rem;
-	padding-right: 2.4rem;
-	padding-left: 2.4rem;
-	height: 70%;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	height: 60%;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.add-menu {
+	left: 1%;
+	background-color: var(--accent-color-info);
+	border-radius: 2.4rem;
+	padding-right: 1.4rem;
+	padding-left: 1.4rem;
+	height: 60%;
 	text-transform: uppercase;
 	color: #fff;
 }

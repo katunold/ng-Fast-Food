@@ -4,6 +4,7 @@ import { MenuComponent } from './menu/menu.component';
 // import { FeatureComponent } from './feature.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { OrdersComponent } from 'src/app/modules/feature/orders/orders.component';
+import { OrderHistoryComponent } from 'src/app/modules/feature/order-history/order-history.component';
 
 const routes: Routes = [
 	{
@@ -12,6 +13,7 @@ const routes: Routes = [
 		children: [
 			{ path: 'menu', component: MenuComponent },
 			{ path: 'orders', component: OrdersComponent},
+			{ path: 'order-history', component: OrderHistoryComponent}
 		]
 	}
 ];

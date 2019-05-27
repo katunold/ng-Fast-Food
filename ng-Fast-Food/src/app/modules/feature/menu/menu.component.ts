@@ -4,6 +4,9 @@ import { HttpService } from 'src/app/services/http/http.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { PlaceOrderComponent } from '../place-order/place-order.component';
+import { AddMenuItemComponent } from 'src/app/modules/feature/add-menu-item/add-menu-item.component';
+import { AuthData } from 'src/app/models/auth-data';
+import { DeleteMenuItemComponent } from 'src/app/modules/feature/delete-menu-item/delete-menu-item.component';
 
 @Component({
 	selector: 'app-menu',
@@ -12,10 +15,12 @@ import { PlaceOrderComponent } from '../place-order/place-order.component';
 })
 export class MenuComponent implements OnInit, OnDestroy {
 	dataSource = new MatTableDataSource();
+	display: boolean;
+	rights: AuthData = JSON.parse(sessionStorage.getItem('currentUser'));
 	private unsubscribe$: Subject<any> = new Subject<any>();
 	loading = true;
 	menu_items: any;
-	displayedColumns: string[] = ['avatar', 'item_name', 'price', 'item_status'];
+	displayedColumns: string[] = ['avatar', 'item_name', 'price', 'item_status', 'actions'];
 
 	constructor(
 		private httpService: HttpService,
@@ -35,6 +40,7 @@ export class MenuComponent implements OnInit, OnDestroy {
 		);
 		this.httpService.loading.subscribe(bool => this.loading = bool);
 		this.httpService.menu_items.subscribe(data => this.menu_items = data);
+		this.display = this.rights.logged_in_as === 'admin';
 	}
 
 	addData = (data) => {
@@ -47,10 +53,31 @@ export class MenuComponent implements OnInit, OnDestroy {
 	}
 
 	openDialog = (): void  => {
-		const dialogRef = this.dialog.open(PlaceOrderComponent, {
+		this.dialog.open(PlaceOrderComponent, {
 			width: '400px',
 			data: this.menu_items
 		});
+	}
+
+	openAddMenuDialog = (): void  => {
+		const dialogRef = this.dialog.open(AddMenuItemComponent, {
+			width: '400px'
+		});
+		this.afterClose(dialogRef);
+	}
+
+	openDeleteDialog = (id, name): void => {
+		const dialogRef = this.dialog.open(DeleteMenuItemComponent, {
+			width: '400px',
+			data: {id, name}
+		});
+		this.afterClose(dialogRef);
+	}
+
+	afterClose = reference => {
+		reference.afterClosed().pipe(takeUntil(this.unsubscribe$)).subscribe(
+			() => this.ngOnInit()
+		);
 	}
 
 	ngOnDestroy(): void {
