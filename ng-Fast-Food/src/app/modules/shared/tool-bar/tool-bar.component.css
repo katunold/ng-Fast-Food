@@ -31,9 +31,10 @@
 }
 
 .place-order-sm {
-	margin-left: 80vw;
-	margin-top: 75vh;
+	margin-left: 75vw;
+	margin-top: 70vh;
 	background-color: var(--accent-color-info);
 	color: #fff;
+	z-index: 5;
 	position: fixed;
 }
