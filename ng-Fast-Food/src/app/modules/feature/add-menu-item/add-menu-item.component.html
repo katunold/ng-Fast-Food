@@ -1,0 +1,21 @@
+<button style="float: right" mat-icon-button mat-dialog-close>
+	<mat-icon aria-label="cancel">cancel</mat-icon>
+</button>
+<form class="place-order" [formGroup]="menuItemForm" (ngSubmit)="onSubmit()">
+	<h1 mat-dialog-title>Add Menu Item</h1><hr>
+	<mat-form-field style="width: 100%">
+		<mat-label>Item Name</mat-label>
+		<input formControlName="food_item" matInput>
+		<mat-error>This field is Required</mat-error>
+	</mat-form-field>
+
+	<mat-form-field style="width: 100%">
+		<mat-label>Item Price</mat-label>
+		<input #price maxlength="5" formControlName="price" matInput>
+		<mat-hint align="end">{{price.value.length}}/5</mat-hint>
+		<mat-error>This field is Required</mat-error>
+	</mat-form-field>
+	<div align="end" mat-dialog-actions>
+		<button type="submit" mat-button cdkFocusInitial>Submit Order</button>
+	</div>
+</form>

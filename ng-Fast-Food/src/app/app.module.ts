@@ -10,6 +10,7 @@ import { UserLoginComponent } from './components/user-login/user-login.component
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { JwtInterceptorService } from './services/interceptors/jwt/jwt.interceptor.service';
+import { ErrorInterceptorService } from 'src/app/services/interceptors/error/error-interceptor.service';
 
 @NgModule({
 	declarations: [AppComponent, UserRegisterComponent, UserLoginComponent],
@@ -25,6 +26,11 @@ import { JwtInterceptorService } from './services/interceptors/jwt/jwt.intercept
 		{
 			provide: HTTP_INTERCEPTORS,
 			useClass: JwtInterceptorService,
+			multi: true,
+		},
+		{
+			provide: HTTP_INTERCEPTORS,
+			useClass: ErrorInterceptorService,
 			multi: true,
 		}
 	],

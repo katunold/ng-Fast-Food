@@ -6,6 +6,10 @@
 			<mat-icon>add</mat-icon>
 			{{button_name}}
 		</button>
+		<button fxShow fxHide.lt-sm *ngIf="display && button_name1" mat-raised-button (click)="openAddMenuDialog($event)" class="add-menu">
+			<mat-icon>add</mat-icon>
+			{{button_name1}}
+		</button>
 		<button fxHide fxShow.lt-sm *ngIf="button_name" mat-mini-fab (click)="openDialog($event)" class="place-order-sm">
 			<mat-icon>add</mat-icon>
 		</button>
