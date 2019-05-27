@@ -100,7 +100,7 @@ export class OrdersComponent implements OnInit, OnDestroy {
 	}
 
 	openDialog = (): void  => {
-		this.dialog.open(SingleOrderComponent, {
+		const dialogRef = this.dialog.open(SingleOrderComponent, {
 			width: '400px',
 			data: this.single_order
 		});

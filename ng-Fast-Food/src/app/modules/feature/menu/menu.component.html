@@ -1,10 +1,8 @@
 <app-spinner *ngIf="loading"></app-spinner>
 <app-tool-bar
 	(create)="openDialog()"
-	(addMenu)="openAddMenuDialog()"
 	tool_bar_title="Fast Food Fast Menu"
-	button_name="Place Order"
-	button_name1="Add Menu Item">
+	button_name="Place Order">
 </app-tool-bar>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 	<ng-container matColumnDef="avatar">
@@ -27,22 +25,7 @@
 		<th mat-header-cell *matHeaderCellDef>Status</th>
 		<td mat-cell *matCellDef="let element">{{element.item_status}}</td>
 	</ng-container>
-	<ng-container matColumnDef="actions" stickyEnd>
-		<th [hidden]="!display" mat-header-cell *matHeaderCellDef>
-			<mat-icon>
-				arrow_drop_down
-			</mat-icon>
-		</th>
-		<td [hidden]="!display" mat-cell *matCellDef="let element">
-			<mat-icon [matMenuTriggerFor]="deleteItem" data-id="contextMenu">
-				more_vert
-			</mat-icon>
-			<mat-menu #deleteItem>
-				<button mat-menu-item (click)="openDeleteDialog(element.item_id, element.item_name)">Delete</button>
-			</mat-menu>
-		</td>
-	</ng-container>
 
-	<tr mat-header-row *matHeaderRowDef="displayedColumns, sticky: true"></tr>
+	<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
 	<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>

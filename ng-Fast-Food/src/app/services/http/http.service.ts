@@ -27,8 +27,4 @@ export class HttpService {
 		return this.http.get<any>(this.url + endpoint);
 	}
 
-	deleteData = (endpoint: string) => {
-		return this.http.delete<any>(this.url + endpoint);
-	}
-
 }
