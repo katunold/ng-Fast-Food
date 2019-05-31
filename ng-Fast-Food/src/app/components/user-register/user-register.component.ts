@@ -1,18 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { debounceTime, first } from 'rxjs/operators';
+import { debounceTime, first, takeUntil } from 'rxjs/operators';
 import { Validations } from '../../utils/validations';
 import { HttpService } from '../../services/http/http.service';
 import { SnackBarService } from '../../services/snack-bar/snack-bar.service';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth/auth.service';
+import { Subject } from 'rxjs';
 
 @Component({
 	selector: 'app-user-register',
 	templateUrl: './user-register.component.html',
 	styleUrls: ['./user-register.component.css'],
 })
-export class UserRegisterComponent implements OnInit {
+export class UserRegisterComponent implements OnInit, OnDestroy {
+	unsubscribe$: Subject<boolean> = new Subject<boolean>();
 	loading: boolean;
 	registrationForm: FormGroup;
 	usernameErrorMessage: string;
@@ -131,9 +133,9 @@ export class UserRegisterComponent implements OnInit {
 			password: registration.get('password').value,
 		};
 		this.http.postData('/auth/signup/', registrationData)
-			.pipe(first())
+			.pipe(takeUntil(this.unsubscribe$))
 			.subscribe(
-				data => {
+				() => {
 					this.router.navigate(['login']);
 					this.snackBar.displaySnackBar(
 						'Successfully registered',
@@ -148,5 +150,10 @@ export class UserRegisterComponent implements OnInit {
 					this.loading = false;
 				}
 			);
+	}
+
+	ngOnDestroy(): void {
+		this.unsubscribe$.next(true);
+		this.unsubscribe$.unsubscribe();
 	}
 }
