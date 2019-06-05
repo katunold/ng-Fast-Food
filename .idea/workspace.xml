@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55d9017c-30b1-4365-94d4-d0e22a836c25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ng-Fast-Food.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/ng-Fast-Food/3rdpartylicenses.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/ng-Fast-Food/es2015-polyfills.1e04665e16f944715fd2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/ng-Fast-Food/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/ng-Fast-Food/main.e4be8908546a00eb76f3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/ng-Fast-Food/polyfills.87ec935e5442ba1047f5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/ng-Fast-Food/runtime.26209474bfa8dc87a77c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/ng-Fast-Food/styles.910e3a6fb8007a818208.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/user-login/user-login.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/guards/AuthGuard/auth.guard.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/feature/menu/menu.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/feature/order-history/order-history.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/feature/orders/orders.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/shared/tool-bar/tool-bar.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/auth/auth.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/http/http.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/interceptors/error/error-interceptor.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/interceptors/jwt/jwt.interceptor.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/snack-bar/snack-bar.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/utils/test/helpers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/utils/test/mock-data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/utils/test/spies.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/sheldon-nunes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/.prettierrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/protractor.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/app.po.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/e2e/tsconfig.e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/tsconfig.e2e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/_redirects" beforeDir="false" afterPath="$PROJECT_DIR$/src/_redirects" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/components/user-login/user-login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/user-login/user-login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/components/user-login/user-login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/user-login/user-login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/components/user-login/user-login.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/components/user-login/user-login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/user-login/user-login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/components/user-register/user-register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/user-register/user-register.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/components/user-register/user-register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/user-register/user-register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/components/user-register/user-register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/user-register/user-register.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/components/user-register/user-register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/user-register/user-register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/guards/AuthGuard/auth.guard.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/guards/AuthGuard/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/guards/AuthGuard/auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/models/auth-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/auth-data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/add-menu-item/add-menu-item.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/add-menu-item/add-menu-item.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/add-menu-item/add-menu-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/add-menu-item/add-menu-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/add-menu-item/add-menu-item.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/add-menu-item/add-menu-item.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/add-menu-item/add-menu-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/add-menu-item/add-menu-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/delete-menu-item/delete-menu-item.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/delete-menu-item/delete-menu-item.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/delete-menu-item/delete-menu-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/delete-menu-item/delete-menu-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/delete-menu-item/delete-menu-item.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/delete-menu-item/delete-menu-item.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/delete-menu-item/delete-menu-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/delete-menu-item/delete-menu-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/feature-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/feature-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/feature.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/feature.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/feature.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/feature.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/feature.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/menu/menu.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/menu/menu.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/menu/menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/menu/menu.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/menu/menu.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/nav-bar/nav-bar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/nav-bar/nav-bar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/nav-bar/nav-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/nav-bar/nav-bar.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/nav-bar/nav-bar.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/nav-bar/nav-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/nav-bar/nav-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/order-history/order-history.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/order-history/order-history.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/order-history/order-history.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/order-history/order-history.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/order-history/order-history.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/order-history/order-history.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/order-history/order-history.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/orders/orders.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/orders/orders.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/orders/orders.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/orders/orders.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/orders/orders.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/orders/orders.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/orders/orders.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/place-order/place-order.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/place-order/place-order.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/place-order/place-order.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/place-order/place-order.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/place-order/place-order.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/place-order/place-order.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/place-order/place-order.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/place-order/place-order.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/single-order/single-order.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/single-order/single-order.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/single-order/single-order.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/single-order/single-order.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/single-order/single-order.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/single-order/single-order.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/feature/single-order/single-order.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/feature/single-order/single-order.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/shared/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/shared/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/shared/spinner/spinner.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/shared/spinner/spinner.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/shared/spinner/spinner.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/shared/spinner/spinner.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/shared/spinner/spinner.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/shared/spinner/spinner.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/shared/spinner/spinner.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/shared/spinner/spinner.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/shared/tool-bar/tool-bar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/shared/tool-bar/tool-bar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/shared/tool-bar/tool-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/shared/tool-bar/tool-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/shared/tool-bar/tool-bar.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/modules/shared/tool-bar/tool-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/shared/tool-bar/tool-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/services/auth/auth.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/services/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/services/http/http.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/services/http/http.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/http/http.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/services/interceptors/error/error-interceptor.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/services/interceptors/error/error-interceptor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/interceptors/error/error-interceptor.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/services/interceptors/jwt/jwt.interceptor.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/services/interceptors/jwt/jwt.interceptor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/interceptors/jwt/jwt.interceptor.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/services/snack-bar/snack-bar.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/services/snack-bar/snack-bar.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/snack-bar/snack-bar.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/utils/test/shared-imports.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/test/shared-imports.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/utils/test/shared-imports.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/test/shared-imports.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/utils/validations.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/validations.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/app/utils/validations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/validations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/assets/css/angular-material-overrides.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/angular-material-overrides.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/assets/font/SuperMarioBros.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/font/SuperMarioBros.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/assets/images/cut1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/cut1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/assets/images/cut2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/cut2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/assets/images/cut3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/cut3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/assets/images/cutlery.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/cutlery.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/assets/images/sheldon-nunes.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-Fast-Food/assets/images/sheldon-nunes.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/src/browserslist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-Fast-Food/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/src/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-Fast-Food/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/dist/" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/components/user-login/user-login.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/components/user-login/user-login.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/user-login/user-login.component.spec.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/user-register/user-register.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/modules/shared/material.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/modules/shared/tool-bar/tool-bar.component.spec.ts" />
+        <option value="$PROJECT_DIR$/src/app/modules/feature/feature-routing.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/modules/feature/feature.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/modules/feature/place-order/place-order.component.spec.ts" />
+        <option value="$PROJECT_DIR$/src/app/modules/feature/nav-bar/nav-bar.component.spec.ts" />
+        <option value="$PROJECT_DIR$/src/app/modules/feature/add-menu-item/add-menu-item.component.spec.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ng-Fast-Food" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ng-Fast-Food" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/src/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55d9017c-30b1-4365-94d4-d0e22a836c25" name="Default Changelist" comment="" />
+      <created>1559746976713</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559746976713</updated>
+      <workItem from="1559746978469" duration="1115000" />
+      <workItem from="1559754358524" duration="56000" />
+      <workItem from="1559754654096" duration="943000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2114000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32923833" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- modify files" />
+    <option name="LAST_COMMIT_MESSAGE" value="- modify files" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/app/modules/shared/material.module.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/shared/spinner/spinner.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/shared/spinner/spinner.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/feature-routing.module.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/feature.module.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/shared/tool-bar/tool-bar.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/shared/tool-bar/tool-bar.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/components/user-register/user-register.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/components/user-login/user-login.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/single-order/single-order.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/single-order/single-order.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/place-order/place-order.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/orders/orders.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/place-order/place-order.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/orders/orders.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/order-history/order-history.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/nav-bar/nav-bar.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/components/user-login/user-login.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/menu/menu.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/menu/menu.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/nav-bar/nav-bar.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/delete-menu-item/delete-menu-item.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/add-menu-item/add-menu-item.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/delete-menu-item/delete-menu-item.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/modules/feature/add-menu-item/add-menu-item.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/components/user-login/user-login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
