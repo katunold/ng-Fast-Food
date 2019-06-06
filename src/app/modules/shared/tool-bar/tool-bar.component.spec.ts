@@ -3,10 +3,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ToolBarComponent } from './tool-bar.component';
 import { SharedImports } from 'src/app/utils/test/shared-imports';
 import { queryAllByCss } from 'src/app/utils/test/helpers';
-import { AuthData } from 'src/app/models/auth-data';
 import { currentUser } from 'src/app/utils/test/mock-data';
 
-fdescribe('ToolBarComponent', () => {
+describe('ToolBarComponent', () => {
 	let component: ToolBarComponent;
 	let fixture: ComponentFixture<ToolBarComponent>;
 	let placeOrder;

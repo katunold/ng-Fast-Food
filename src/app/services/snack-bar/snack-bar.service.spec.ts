@@ -3,7 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { SnackBarService } from './snack-bar.service';
 import { SharedImports } from 'src/app/utils/test/shared-imports';
 
-fdescribe('SnackBarService', () => {
+describe('SnackBarService', () => {
 	let service: SnackBarService;
 	const sharedImports = new SharedImports();
 	beforeEach(() => {

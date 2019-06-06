@@ -10,7 +10,7 @@ import { queryAllByCss, triggerEvents } from 'src/app/utils/test/helpers';
 import { error_response } from 'src/app/utils/test/mock-data';
 import { SnackBarService } from 'src/app/services/snack-bar/snack-bar.service';
 
-fdescribe('UserRegisterComponent', () => {
+describe('UserRegisterComponent', () => {
 	let component: UserRegisterComponent;
 	let fixture: ComponentFixture<UserRegisterComponent>;
 	let router;
@@ -81,6 +81,17 @@ fdescribe('UserRegisterComponent', () => {
 		fixture.whenStable().then(() => {
 			expect(component.contactErrorMessage).toBe('Invalid contact format, ' +
 				'please enter a value with this format +25670000000');
+		});
+	}));
+
+	it('should return null when the correct contact format is submitted', fakeAsync(() => {
+		const inputElement = fixture.nativeElement.querySelector('#contact');
+		inputElement.value = '0706180670';
+		inputElement.dispatchEvent(new Event('input'));
+		fixture.detectChanges();
+		tick(1000);
+		fixture.whenStable().then(() => {
+			expect(component.contactErrorMessage).toBe('');
 		});
 	}));
 

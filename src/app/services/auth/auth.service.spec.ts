@@ -8,7 +8,7 @@ import {httpClientSpy, routerSpy} from 'src/app/utils/test/spies';
 import { of } from 'rxjs';
 import {Router} from '@angular/router';
 
-fdescribe('AuthService', () => {
+describe('AuthService', () => {
 	let service: AuthService;
 	const sharedImports = new SharedImports();
 	beforeEach(() => {

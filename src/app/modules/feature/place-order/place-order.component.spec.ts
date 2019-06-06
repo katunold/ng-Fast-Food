@@ -12,7 +12,7 @@ import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {queryByCss, triggerEvents} from 'src/app/utils/test/helpers';
 import {FormBuilder} from '@angular/forms';
 
-fdescribe('PlaceOrderComponent', () => {
+describe('PlaceOrderComponent', () => {
 	let component: PlaceOrderComponent;
 	let formDe;
 	let order_item;

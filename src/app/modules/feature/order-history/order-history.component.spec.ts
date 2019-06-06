@@ -9,7 +9,7 @@ import { HttpService } from 'src/app/services/http/http.service';
 import { SnackBarService } from 'src/app/services/snack-bar/snack-bar.service';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
-fdescribe('OrderHistoryComponent', () => {
+describe('OrderHistoryComponent', () => {
 	let component: OrderHistoryComponent;
 	let fixture: ComponentFixture<OrderHistoryComponent>;
 	let dummyOrderHistoryComponent: OrderHistoryComponent;

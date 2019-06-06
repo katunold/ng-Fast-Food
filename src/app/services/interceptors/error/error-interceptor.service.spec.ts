@@ -5,7 +5,7 @@ import { authServiceSpy } from 'src/app/utils/test/spies';
 import { AuthService } from 'src/app/services/auth/auth.service';
 import { throwError } from 'rxjs';
 
-fdescribe('ErrorInterceptorService', () => {
+describe('ErrorInterceptorService', () => {
 	let service;
 
 	beforeEach(() => {

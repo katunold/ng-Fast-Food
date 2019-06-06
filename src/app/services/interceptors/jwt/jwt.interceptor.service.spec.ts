@@ -2,7 +2,7 @@ import { JwtInterceptorService } from './jwt.interceptor.service';
 import { httpHandlerSpy } from 'src/app/utils/test/spies';
 import { of } from 'rxjs';
 
-fdescribe('JwtInterceptorService', () => {
+describe('JwtInterceptorService', () => {
 	let service;
 	let spy;
 	let req;

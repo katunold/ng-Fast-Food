@@ -2,7 +2,7 @@ import { AuthGuard } from './auth.guard';
 import { routerSpy } from 'src/app/utils/test/spies';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
-fdescribe('AuthGuard', () => {
+describe('AuthGuard', () => {
 	let authGuard: AuthGuard;
 	let authServiceMock;
 

@@ -8,7 +8,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { BehaviorSubject, EMPTY, of, throwError } from 'rxjs';
 import { emptyMenuData, error_response, menuData } from 'src/app/utils/test/mock-data';
 
-fdescribe('MenuComponent', () => {
+describe('MenuComponent', () => {
 	let component: MenuComponent;
 	let fixture: ComponentFixture<MenuComponent>;
 	let httpServiceMock;
@@ -36,6 +36,7 @@ fdescribe('MenuComponent', () => {
 			.then(() => {
 				fixture = TestBed.createComponent(MenuComponent);
 				component = fixture.componentInstance;
+				component.rights = {logged_in_as: 'admin'};
 				fixture.detectChanges();
 			});
 	}));

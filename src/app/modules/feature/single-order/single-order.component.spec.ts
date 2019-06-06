@@ -6,7 +6,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
 import {matDialogRefSpy, matDialogSpy} from 'src/app/utils/test/spies';
 import {ordersData} from 'src/app/utils/test/mock-data';
 
-fdescribe('SingleOrderComponent', () => {
+describe('SingleOrderComponent', () => {
 	let component: SingleOrderComponent;
 	let fixture: ComponentFixture<SingleOrderComponent>;
 	const sharedImports = new SharedImports();

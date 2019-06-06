@@ -9,7 +9,7 @@ import {HttpService} from 'src/app/services/http/http.service';
 import {SnackBarService} from 'src/app/services/snack-bar/snack-bar.service';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
 
-fdescribe('DeleteMenuItemComponent', () => {
+describe('DeleteMenuItemComponent', () => {
 	let component: DeleteMenuItemComponent;
 	let fixture: ComponentFixture<DeleteMenuItemComponent>;
 	let mockHttpService;

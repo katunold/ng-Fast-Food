@@ -6,7 +6,7 @@ import { HttpTestingController } from '@angular/common/http/testing';
 import { registrationData } from 'src/app/utils/test/mock-data';
 import { environment } from 'src/environments/environment';
 
-fdescribe('HttpService', () => {
+describe('HttpService', () => {
 	let service: HttpService;
 	let httpMock: HttpTestingController;
 	const url = environment.base_url;

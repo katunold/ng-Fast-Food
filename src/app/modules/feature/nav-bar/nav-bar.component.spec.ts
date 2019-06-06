@@ -9,7 +9,7 @@ import {HttpService} from 'src/app/services/http/http.service';
 import {SnackBarService} from 'src/app/services/snack-bar/snack-bar.service';
 import {AuthService} from 'src/app/services/auth/auth.service';
 
-fdescribe('NavBarComponent', () => {
+describe('NavBarComponent', () => {
 	let component: NavBarComponent;
 	let fixture: ComponentFixture<NavBarComponent>;
 	let dummyNavBarComponent: NavBarComponent;

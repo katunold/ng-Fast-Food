@@ -11,7 +11,7 @@ import {of, throwError} from 'rxjs';
 import {error_response, success_response} from 'src/app/utils/test/mock-data';
 import {FormBuilder} from '@angular/forms';
 
-fdescribe('AddMenuItemComponent', () => {
+describe('AddMenuItemComponent', () => {
 	let component: AddMenuItemComponent;
 	let fixture: ComponentFixture<AddMenuItemComponent>;
 	let dummyAddMenuItemComponent: AddMenuItemComponent;

@@ -17,7 +17,7 @@ import { SnackBarService } from 'src/app/services/snack-bar/snack-bar.service';
 export class MenuComponent implements OnInit, OnDestroy {
 	dataSource = new MatTableDataSource();
 	display: boolean;
-	rights: AuthData = JSON.parse(sessionStorage.getItem('currentUser'));
+	rights: any = JSON.parse(sessionStorage.getItem('currentUser'));
 	private unsubscribe$: Subject<any> = new Subject<any>();
 	loading = true;
 	menu_items: any;

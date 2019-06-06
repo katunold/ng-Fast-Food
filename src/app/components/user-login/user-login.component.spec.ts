@@ -10,7 +10,7 @@ import { queryAllByCss, queryByCss, triggerEvents } from 'src/app/utils/test/hel
 import { noop, of, throwError } from 'rxjs';
 import { error_response } from 'src/app/utils/test/mock-data';
 
-fdescribe('UserLoginComponent', () => {
+describe('UserLoginComponent', () => {
 	let component: UserLoginComponent;
 	let fixture: ComponentFixture<UserLoginComponent>;
 	let router;
