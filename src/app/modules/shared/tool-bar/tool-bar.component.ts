@@ -12,7 +12,7 @@ export class ToolBarComponent implements OnInit {
 	@Input() button_name1: string;
 	@Output() create: EventEmitter<any> = new EventEmitter<any>();
 	@Output() addMenu: EventEmitter<any> = new EventEmitter<any>();
-	rights: AuthData = JSON.parse(sessionStorage.getItem('currentUser'));
+	rights: any = JSON.parse(sessionStorage.getItem('currentUser'));
 	display: boolean;
 
 	constructor() { }

@@ -21,6 +21,7 @@ describe('ToolBarComponent', () => {
 			.then(() => {
 				fixture = TestBed.createComponent(ToolBarComponent);
 				component = fixture.componentInstance;
+				component.rights = {logged_in_as: 'admin'};
 				fixture.detectChanges();
 			});
 	}));
