@@ -4,7 +4,6 @@
     <list default="true" id="55d9017c-30b1-4365-94d4-d0e22a836c25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -49,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="339">
-              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -284,7 +283,7 @@
       <updated>1559746976713</updated>
       <workItem from="1559746978469" duration="1115000" />
       <workItem from="1559754358524" duration="56000" />
-      <workItem from="1559754654096" duration="25553000" />
+      <workItem from="1559754654096" duration="25978000" />
     </task>
     <task id="LOCAL-00001" summary="- modify files">
       <created>1559756834296</created>
@@ -356,7 +355,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559830045276</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- add coveralls badge">
+      <created>1559830575334</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559830575334</updated>
+    </task>
+    <task id="LOCAL-00012" summary="- add coveralls badge">
+      <created>1559830912341</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559830912341</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -371,7 +384,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26724000" />
+    <option name="totallyTimeSpent" value="27149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -439,7 +452,8 @@
     <MESSAGE value="- fix coveralls" />
     <MESSAGE value="- add just 2 badges" />
     <MESSAGE value="- fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fixing" />
+    <MESSAGE value="- add coveralls badge" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add coveralls badge" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/app/modules/shared/material.module.ts" />
@@ -756,7 +770,7 @@
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>
