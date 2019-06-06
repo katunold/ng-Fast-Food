@@ -22,4 +22,4 @@ install:
 script:
  - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
 after_script:
- - coveralls
+ - npm run coveralls
