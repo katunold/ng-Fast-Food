@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            <state relative-caret-position="339">
+              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -58,8 +58,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-43">
-                <caret column="312" selection-start-column="312" selection-end-column="312" />
+              <first_editor relative-caret-position="-210">
+                <caret column="14" selection-start-column="14" selection-end-column="14" />
               </first_editor>
               <second_editor />
             </state>
@@ -284,7 +284,7 @@
       <updated>1559746976713</updated>
       <workItem from="1559746978469" duration="1115000" />
       <workItem from="1559754358524" duration="56000" />
-      <workItem from="1559754654096" duration="24982000" />
+      <workItem from="1559754654096" duration="25553000" />
     </task>
     <task id="LOCAL-00001" summary="- modify files">
       <created>1559756834296</created>
@@ -342,7 +342,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559828957778</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- add just 2 badges">
+      <created>1559829589767</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559829589767</updated>
+    </task>
+    <task id="LOCAL-00010" summary="- fixing">
+      <created>1559830045276</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1559830045276</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -357,7 +371,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26153000" />
+    <option name="totallyTimeSpent" value="26724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -423,7 +437,9 @@
     <MESSAGE value="- fix the last bug" />
     <MESSAGE value="- install coveralls" />
     <MESSAGE value="- fix coveralls" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fix coveralls" />
+    <MESSAGE value="- add just 2 badges" />
+    <MESSAGE value="- fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fixing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/app/modules/shared/material.module.ts" />
@@ -730,8 +746,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-43">
-            <caret column="312" selection-start-column="312" selection-end-column="312" />
+          <first_editor relative-caret-position="-210">
+            <caret column="14" selection-start-column="14" selection-end-column="14" />
           </first_editor>
           <second_editor />
         </state>
@@ -739,8 +755,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        <state relative-caret-position="339">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
         </state>
       </provider>
     </entry>

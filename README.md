@@ -1,4 +1,4 @@
-# NgFastFood [![Build Status](https://travis-ci.org/katunold/ng-Fast-Food.svg?branch=story%2Ftests)](https://travis-ci.org/katunold/ng-Fast-Food) [![Maintainability](https://api.codeclimate.com/v1/badges/99ee8272ebae6acf8a3d/maintainability)](https://codeclimate.com/github/katunold/ng-Fast-Food/maintainability)
+# NgFastFood  [![Build Status](https://travis-ci.org/katunold/ng-Fast-Food.svg?branch=story%2Ftests)](https://travis-ci.org/katunold/ng-Fast-Food) [![Maintainability](https://api.codeclimate.com/v1/badges/99ee8272ebae6acf8a3d/maintainability)](https://codeclimate.com/github/katunold/ng-Fast-Food/maintainability) [![Coverage Status](https://coveralls.io/repos/github/katunold/ng-Fast-Food/badge.svg)](https://coveralls.io/github/katunold/ng-Fast-Food)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 

@@ -22,5 +22,4 @@ install:
 script:
  - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
 after_script:
- - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
- - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
+ - coveralls
