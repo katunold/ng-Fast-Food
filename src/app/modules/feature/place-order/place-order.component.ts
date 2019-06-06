@@ -18,8 +18,8 @@ export class PlaceOrderComponent implements OnInit, OnDestroy{
 		public dialogRef: MatDialogRef<PlaceOrderComponent>,
 		@Inject(MAT_DIALOG_DATA) public data,
 		private formBuilder: FormBuilder,
-		private httpService: HttpService,
-		private snackBarService: SnackBarService
+		public httpService: HttpService,
+		public snackBarService: SnackBarService
 	) {}
 
 	ngOnInit(): void {

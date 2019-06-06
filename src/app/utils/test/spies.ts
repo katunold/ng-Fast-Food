@@ -37,3 +37,5 @@ export const httpHandlerSpy = createSpyObj('HttpHandler', [
 export const matDialogSpy = createSpyObj('MatDialog', [
 	'open'
 ]);
+
+export const matDialogRefSpy = createSpyObj('MatDialogRef', ['close']);

@@ -14,14 +14,15 @@ import { MenuComponent } from 'src/app/modules/feature/menu/menu.component';
 })
 export class AddMenuItemComponent implements OnInit, OnDestroy {
 	private unsubscribe$: Subject<any> = new Subject<any>();
+	data: any;
 	menuItemForm: FormGroup;
 	menu: MenuComponent;
 
 	constructor(
 		public dialogRef: MatDialogRef<AddMenuItemComponent>,
 		private formBuilder: FormBuilder,
-		private httpService: HttpService,
-		private snackBarService: SnackBarService,
+		public httpService: HttpService,
+		public snackBarService: SnackBarService,
 	) { }
 
 	ngOnInit() {
@@ -32,9 +33,9 @@ export class AddMenuItemComponent implements OnInit, OnDestroy {
 	}
 
 	onSubmit = () => {
-		const data = this.menuItemForm.value;
+		this.data = this.menuItemForm.value;
 		this.dialogRef.close();
-		this.httpService.requests_to_backend('/menu', 'post', data)
+		this.httpService.requests_to_backend('/menu', 'post', this.data)
 			.pipe(takeUntil(this.unsubscribe$))
 			.subscribe(
 				response => {

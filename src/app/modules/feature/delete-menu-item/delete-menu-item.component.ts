@@ -16,8 +16,8 @@ export class DeleteMenuItemComponent implements OnDestroy {
 	constructor(
 		public dialogRef: MatDialogRef<DeleteMenuItemComponent>,
 		@Inject(MAT_DIALOG_DATA) public data,
-		private httpService: HttpService,
-		private snackBarService: SnackBarService
+		public httpService: HttpService,
+		public snackBarService: SnackBarService
 	) { }
 
 	onDelete = (data) => {

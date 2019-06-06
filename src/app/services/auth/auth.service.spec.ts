@@ -4,8 +4,9 @@ import { AuthService } from './auth.service';
 import { SharedImports } from 'src/app/utils/test/shared-imports';
 import { authResponse, loginData } from 'src/app/utils/test/mock-data';
 import { HttpClient } from '@angular/common/http';
-import { httpClientSpy } from 'src/app/utils/test/spies';
+import {httpClientSpy, routerSpy} from 'src/app/utils/test/spies';
 import { of } from 'rxjs';
+import {Router} from '@angular/router';
 
 fdescribe('AuthService', () => {
 	let service: AuthService;
@@ -14,7 +15,8 @@ fdescribe('AuthService', () => {
 		TestBed.configureTestingModule({
 			imports: [...sharedImports.getSharedImports()],
 			providers: [
-				{ provide: HttpClient, useValue: httpClientSpy}
+				{ provide: HttpClient, useValue: httpClientSpy},
+				{provide: Router, useValue: routerSpy}
 			]
 		});
 		service = TestBed.get(AuthService);

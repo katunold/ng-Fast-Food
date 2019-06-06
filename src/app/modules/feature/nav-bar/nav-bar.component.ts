@@ -18,9 +18,9 @@ export class NavBarComponent implements OnInit, OnDestroy {
 	private unsubscribe$: Subject<any> = new Subject<any>();
 
 	constructor(
-		private authService: AuthService,
-		private httpService: HttpService,
-		private snackBarService: SnackBarService
+		public authService: AuthService,
+		public httpService: HttpService,
+		public snackBarService: SnackBarService
 	) { }
 
 	ngOnInit() {

@@ -5,7 +5,7 @@ export const error_response = {
 };
 
 export const success_response = {
-	message: 'Order updated successfully'
+	message: 'Request was successful'
 };
 
 export const registrationData = {
