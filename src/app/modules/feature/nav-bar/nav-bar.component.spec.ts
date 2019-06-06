@@ -39,8 +39,8 @@ describe('NavBarComponent', () => {
 			.then(() => {
 				fixture = TestBed.createComponent(NavBarComponent);
 				component = fixture.componentInstance;
+				component.rights = {logged_in_as: 'admin'};
 				component.userName = 'test';
-				component.display = true;
 				fixture.detectChanges();
 			});
 	}));
@@ -66,6 +66,8 @@ describe('NavBarComponent', () => {
 		};
 
 		dummyNavBarComponent = new NavBarComponent(mockAuthService, mockHttpService, snackBarServiceSpy);
+		dummyNavBarComponent.rights = {logged_in_as: 'admin'};
+		dummyNavBarComponent.userName = 'test';
 		dummyNavBarComponent.onLogout();
 		expect(dummyNavBarComponent.snackBarService.displaySnackBar).toHaveBeenCalled();
 

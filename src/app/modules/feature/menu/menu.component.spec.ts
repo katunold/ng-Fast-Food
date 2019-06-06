@@ -53,6 +53,7 @@ describe('MenuComponent', () => {
 			menu_items,
 		};
 		dummyMenuComponent = new MenuComponent(httpServiceMock, matDialogSpy, snackBarServiceSpy);
+		dummyMenuComponent.rights = {logged_in_as: 'admin'};
 		dummyMenuComponent.ngOnInit();
 		expect(dummyMenuComponent.snackBarService.displaySnackBar).toHaveBeenCalled();
 	});
@@ -65,6 +66,7 @@ describe('MenuComponent', () => {
 			menu_items,
 		};
 		dummyMenuComponent = new MenuComponent(httpServiceMock, matDialogSpy, snackBarServiceSpy);
+		dummyMenuComponent.rights = {logged_in_as: 'admin'};
 		dummyMenuComponent.ngOnInit();
 		expect(dummyMenuComponent.snackBarService.displaySnackBar).toHaveBeenCalled();
 	});

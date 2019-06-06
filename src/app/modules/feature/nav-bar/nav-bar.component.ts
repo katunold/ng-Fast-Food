@@ -1,6 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth/auth.service';
-import { AuthData } from 'src/app/models/auth-data';
 import { HttpService } from 'src/app/services/http/http.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -13,7 +12,7 @@ import { SnackBarService } from 'src/app/services/snack-bar/snack-bar.service';
 })
 export class NavBarComponent implements OnInit, OnDestroy {
 	userName: string;
-	rights: AuthData = JSON.parse(sessionStorage.getItem('currentUser'));
+	rights: any = JSON.parse(sessionStorage.getItem('currentUser'));
 	display: boolean;
 	private unsubscribe$: Subject<any> = new Subject<any>();
 
