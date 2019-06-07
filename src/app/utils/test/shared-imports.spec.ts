@@ -1,4 +1,4 @@
-import { SharedImports } from './shared-imports';
+import { SharedImports } from 'src/app/utils/test/shared-imports';
 
 describe('SharedImports', () => {
 	it('should create an instance', () => {

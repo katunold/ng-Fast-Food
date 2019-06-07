@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ErrorInterceptorService } from './error-interceptor.service';
+import { ErrorInterceptorService } from 'src/app/services/interceptors/error/error-interceptor.service';
 import { authServiceSpy } from 'src/app/utils/test/spies';
 import { AuthService } from 'src/app/services/auth/auth.service';
 import { throwError } from 'rxjs';

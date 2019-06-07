@@ -3,9 +3,8 @@ import { MatDialog, MatTableDataSource } from '@angular/material';
 import { HttpService } from 'src/app/services/http/http.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { PlaceOrderComponent } from '../place-order/place-order.component';
+import { PlaceOrderComponent } from 'src/app/modules/feature/place-order/place-order.component';
 import { AddMenuItemComponent } from 'src/app/modules/feature/add-menu-item/add-menu-item.component';
-import { AuthData } from 'src/app/models/auth-data';
 import { DeleteMenuItemComponent } from 'src/app/modules/feature/delete-menu-item/delete-menu-item.component';
 import { SnackBarService } from 'src/app/services/snack-bar/snack-bar.service';
 

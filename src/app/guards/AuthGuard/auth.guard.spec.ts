@@ -1,4 +1,4 @@
-import { AuthGuard } from './auth.guard';
+import { AuthGuard } from 'src/app/guards/AuthGuard/auth.guard';
 import { routerSpy } from 'src/app/utils/test/spies';
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 

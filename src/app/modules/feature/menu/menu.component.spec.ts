@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MenuComponent } from './menu.component';
+import { MenuComponent } from 'src/app/modules/feature/menu/menu.component';
 import { SharedImports } from 'src/app/utils/test/shared-imports';
 import { HttpService } from 'src/app/services/http/http.service';
 import { httpServiceSpy, matDialogSpy, snackBarServiceSpy } from 'src/app/utils/test/spies';

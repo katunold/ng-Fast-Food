@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DeleteMenuItemComponent } from './delete-menu-item.component';
+import { DeleteMenuItemComponent } from 'src/app/modules/feature/delete-menu-item/delete-menu-item.component';
 import {SharedImports} from 'src/app/utils/test/shared-imports';
 import {httpServiceSpy, matDialogRefSpy, matDialogSpy, snackBarServiceSpy} from 'src/app/utils/test/spies';
 import {of, throwError} from 'rxjs';

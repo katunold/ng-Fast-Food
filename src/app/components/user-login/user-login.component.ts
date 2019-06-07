@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
-import { SnackBarService } from '../../services/snack-bar/snack-bar.service';
-import { AuthService } from '../../services/auth/auth.service';
+import { SnackBarService } from 'src/app/services/snack-bar/snack-bar.service';
+import { AuthService } from 'src/app/services/auth/auth.service';
 import { Router } from '@angular/router';
 
 @Component({

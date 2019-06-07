@@ -1,4 +1,4 @@
-import { JwtInterceptorService } from './jwt.interceptor.service';
+import { JwtInterceptorService } from 'src/app/services/interceptors/jwt/jwt.interceptor.service';
 import { httpHandlerSpy } from 'src/app/utils/test/spies';
 import { of } from 'rxjs';
 

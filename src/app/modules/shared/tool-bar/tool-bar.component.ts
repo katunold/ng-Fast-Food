@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { AuthData } from 'src/app/models/auth-data';
 
 @Component({
 	selector: 'app-tool-bar',

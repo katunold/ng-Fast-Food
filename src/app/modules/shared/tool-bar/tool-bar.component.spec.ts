@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ToolBarComponent } from './tool-bar.component';
+import { ToolBarComponent } from 'src/app/modules/shared/tool-bar/tool-bar.component';
 import { SharedImports } from 'src/app/utils/test/shared-imports';
 import { queryAllByCss } from 'src/app/utils/test/helpers';
 import { currentUser } from 'src/app/utils/test/mock-data';

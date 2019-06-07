@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FeatureRoutingModule } from './feature-routing.module';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { MenuComponent } from './menu/menu.component';
-import { MaterialModule } from '../shared/material.module';
-import { PlaceOrderComponent } from './place-order/place-order.component';
+import { FeatureRoutingModule } from 'src/app/modules/feature/feature-routing.module';
+import { NavBarComponent } from 'src/app/modules/feature/nav-bar/nav-bar.component';
+import { MenuComponent } from 'src/app/modules/feature/menu/menu.component';
+import { MaterialModule } from 'src/app/modules/shared/material.module';
+import { PlaceOrderComponent } from 'src/app/modules/feature/place-order/place-order.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { OrdersComponent } from './orders/orders.component';
-import { SingleOrderComponent } from './single-order/single-order.component';
-import { OrderHistoryComponent } from './order-history/order-history.component';
-import { AddMenuItemComponent } from './add-menu-item/add-menu-item.component';
-import { DeleteMenuItemComponent } from './delete-menu-item/delete-menu-item.component';
+import { OrdersComponent } from 'src/app/modules/feature/orders/orders.component';
+import { SingleOrderComponent } from 'src/app/modules/feature/single-order/single-order.component';
+import { OrderHistoryComponent } from 'src/app/modules/feature/order-history/order-history.component';
+import { AddMenuItemComponent } from 'src/app/modules/feature/add-menu-item/add-menu-item.component';
+import { DeleteMenuItemComponent } from 'src/app/modules/feature/delete-menu-item/delete-menu-item.component';
 import { ToolBarComponent } from 'src/app/modules/shared/tool-bar/tool-bar.component';
 
 @NgModule({

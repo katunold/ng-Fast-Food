@@ -1,4 +1,4 @@
-import { Validations } from './validations';
+import { Validations } from 'src/app/utils/validations';
 
 describe('Validations', () => {
 	it('should create an instance', () => {

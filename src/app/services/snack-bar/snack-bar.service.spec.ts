@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SnackBarService } from './snack-bar.service';
+import { SnackBarService } from 'src/app/services/snack-bar/snack-bar.service';
 import { SharedImports } from 'src/app/utils/test/shared-imports';
 
 describe('SnackBarService', () => {

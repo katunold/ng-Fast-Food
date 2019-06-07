@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MenuComponent } from './menu/menu.component';
-// import { FeatureComponent } from './feature.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { MenuComponent } from 'src/app/modules/feature/menu/menu.component';
+import { NavBarComponent } from 'src/app/modules/feature/nav-bar/nav-bar.component';
 import { OrdersComponent } from 'src/app/modules/feature/orders/orders.component';
 import { OrderHistoryComponent } from 'src/app/modules/feature/order-history/order-history.component';
 

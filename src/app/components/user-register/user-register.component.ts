@@ -1,9 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { debounceTime, first, takeUntil } from 'rxjs/operators';
-import { Validations } from '../../utils/validations';
-import { HttpService } from '../../services/http/http.service';
-import { SnackBarService } from '../../services/snack-bar/snack-bar.service';
+import { debounceTime, takeUntil } from 'rxjs/operators';
+import { Validations } from 'src/app/utils/validations';
+import { HttpService } from 'src/app/services/http/http.service';
+import { SnackBarService } from 'src/app/services/snack-bar/snack-bar.service';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth/auth.service';
 import { Subject } from 'rxjs';

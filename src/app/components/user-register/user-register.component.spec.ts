@@ -1,7 +1,7 @@
 import { async, ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
-import { UserRegisterComponent } from './user-register.component';
-import { SharedImports } from '../../utils/test/shared-imports';
-import { HttpService } from '../../services/http/http.service';
+import { UserRegisterComponent } from 'src/app/components/user-register/user-register.component';
+import { SharedImports } from 'src/app/utils/test/shared-imports';
+import { HttpService } from 'src/app/services/http/http.service';
 import { By } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { of, throwError } from 'rxjs';
@@ -84,7 +84,8 @@ describe('UserRegisterComponent', () => {
 		});
 	}));
 
-	it('should return null when the correct contact format is submitted', fakeAsync(() => {
+	it('should return null when the correct contact format is submitted',
+		fakeAsync(() => {
 		const inputElement = fixture.nativeElement.querySelector('#contact');
 		inputElement.value = '0706180670';
 		inputElement.dispatchEvent(new Event('input'));

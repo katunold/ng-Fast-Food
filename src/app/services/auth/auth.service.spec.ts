@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AuthService } from './auth.service';
+import { AuthService } from 'src/app/services/auth/auth.service';
 import { SharedImports } from 'src/app/utils/test/shared-imports';
 import { authResponse, loginData } from 'src/app/utils/test/mock-data';
 import { HttpClient } from '@angular/common/http';
