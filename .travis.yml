@@ -22,7 +22,7 @@ install:
  - npm install
 
 script:
- - istanbul cover npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox -- -R spec
+ - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
 
 before_script:
  - npm install codeclimate-test-reporter istanbul -g
