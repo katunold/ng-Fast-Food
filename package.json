@@ -8,7 +8,8 @@
 		"test": "ng test --code-coverage",
 		"lint": "ng lint",
 		"e2e": "ng e2e",
-		"prettify": "prettier --write src/**/**/*.ts"
+		"prettify": "prettier --write src/**/**/*.ts",
+		"coveralls": "./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
 	},
 	"private": true,
 	"dependencies": {
