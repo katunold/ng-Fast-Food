@@ -6,8 +6,6 @@ node_js:
  - '8'
 
 addons:
- code_climate:
-  repo_token: '41ee458c2bfc1b668344fd2f1ae2163c3e5eeb42c80e0cdc465b767ba39558d0'
  apt:
   sources:
    - google-chrome
@@ -23,9 +21,5 @@ install:
 
 script:
  - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
-
-before_script:
- - npm install codeclimate-test-reporter istanbul -g
-
 after_script:
- - codeclimate-test-reporter < ./coverage/lcov.info
+ - COVERALLS_REPO_TOKEN npm run coveralls
