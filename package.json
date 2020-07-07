@@ -28,7 +28,7 @@
 		"hammerjs": "^2.0.8",
 		"install": "^0.12.2",
 		"ng-san-letter-icon": "latest",
-		"npm": "^6.9.0",
+		"npm": "^6.14.6",
 		"rxjs": "~6.3.3",
 		"tslib": "^1.9.0",
 		"zone.js": "~0.8.26"
